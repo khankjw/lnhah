@@ -1,0 +1,7 @@
+div.wrapper {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
