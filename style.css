@@ -1,7 +1,36 @@
-div.wrapper {
+body {
+    font-family: NanumGothic,sans-serif;
+    font-size: .75em;
+    color: #666;
+    line-height: 1;
+    display: block;
+}
+
+#whole_wrapper {
   width: 980px;
   margin: 0 auto;
   position: relative;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
+}
+
+.wrapper {
+  background-image: url(https://opentutorials.org/static/img/desktop/bg_line.png);
+  background-position: 249px top;
+  background-repeat: repeat-y;
+}
+
+aside {
+  width: 250px;
+  float: left;
+}
+
+.entry-area {
+  width: 730px
+  float: left;
+}
+
+article {
+  min-height: 400px;
+  padding: 40px 35px;
 }
