@@ -1,23 +1,139 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
 body {
-    font-family: NanumGothic,sans-serif;
-    font-size: .75em;
-    color: #666;
-    line-height: 1;
+  font-family: NanumGothic,sans-serif;
+  font-size: .75em;
+  color: #666;
+  line-height: 1;
+
+}
+#whole_wrapper {
+  position: relative;
+}
+
+#whole_wrapper div#body div#cols>div.wrapper {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+div#cols>.wrapper {
+    background-image: url(https://opentutorials.org/static/img/desktop/bg_line.png);
+    background-position: 249px top;
+    background-repeat: repeat-y;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
-#whole_wrapper {
-  width: 980px;
-  margin: 0 auto;
-  position: relative;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
+#whole_wrapper div#body div#cols aside div.index#topic_list_index {
+    position: relative;
+    padding-bottom: 2em;
 }
-
-.wrapper {
-  background-image: url(https://opentutorials.org/static/img/desktop/bg_line.png);
-  background-position: 249px top;
-  background-repeat: repeat-y;
+#whole_wrapper div#body div#cols aside div.index {
+    padding: 0 1px 0 0;
+}
+#whole_wrapper div#body div#cols aside div.index h2 {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px 14px 10px 14px;
+}
+#whole_wrapper div#body div#cols aside div.index nav {
+    font-size: 1em;
+}
+ol, ul {
+    list-style: none;
+}
+div#author_identity {
+    margin-top: 45px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+    position: relative;
+}
+div#author_identity h3 {
+    color: #000;
+    font-size: 12px;
+    padding: 7px 15px 4px;
+}
+div#author_identity ul {
+    margin-left: 5px;
+    line-height: 1.7em;
+}
+div#author_identity ul li {
+    position: relative;
+    padding-bottom: 10px;
+}
+div#author_identity ul li div.profile_image {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+img.profile_icon {
+    cursor: pointer;
+}
+div#author_identity ul li div.name {
+    color: #000;
+    font-size: 14px;
+    margin-left: 60px;
+    padding-top: 10px;
+}
+strong, b {
+    font-weight: bold;
+}
+#whole_wrapper div#body div#cols div.entry-area {
+    width: 730px;
+    float: left;
+}
+#whole_wrapper div#body div#cols div.entry-area article {
+    min-height: 400px;
+    padding: 40px 35px;
+}
+#whole_wrapper div#body div#cols div.entry-area article hgroup {
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    position: relative;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    line-height: 1.8;
+}
+#whole_wrapper div#body div#cols div.entry-area article hgroup h1 {
+    color: #333;
+    font-size: 2.1em;
+    font-weight: normal;
+}
+#whole_wrapper div#body div#cols div.entry-area article hgroup time {
+    color: #999;
+    font-size: .95em;
+    margin: .5em .5em 0 .2em;
+}
+body.cke_editable, article div#content, form#diff_dialog div.body div.wrapper {
+    font-family: NanumGothic,sans-serif;
+    line-height: 1.8;
+    font-size: 1.1em;
+    padding: 10px;
+    color: #666;
+}
+body.cke_editable div.movie, article div#content div.movie, form#diff_dialog div.body div.wrapper div.movie {
+    margin: 20px 0;
+    background-image: url(https://opentutorials.org/static/img/desktop/bg_movie.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 11px;
+}
+body.cke_editable div.movie iframe, article div#content div.movie iframe, form#diff_dialog div.body div.wrapper div.movie iframe {
+    -moz-box-shadow: inset 0 0 10px #666;
+    -webkit-box-shadow: 0 0 10px #666;
+    -o-box-shadow: inset 0 0 10px #666;
+    box-shadow: 0 0 10px #666;
 }
 
 aside {
@@ -25,12 +141,11 @@ aside {
   float: left;
 }
 
-.entry-area {
-  width: 730px
-  float: left;
-}
-
-article {
-  min-height: 400px;
-  padding: 40px 35px;
+p {
+  margin: 1em 0;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
 }
